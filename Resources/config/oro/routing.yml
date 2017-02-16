@@ -1,0 +1,6 @@
+symetal_sondeos_bundle:
+    resource:     "@SyMetalSondeosBundle/Controller"
+    type:         annotation
+    prefix:       /
+
+

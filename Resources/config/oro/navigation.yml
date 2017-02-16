@@ -1,0 +1,20 @@
+navigation:
+    menu_config:
+        items:
+            acme_tab:
+                label: Acme label
+                uri:   '#'
+                extras:
+                    position: 300
+            acme_tab_link:
+                label: sondeos label
+                route: sondeos
+        tree:
+            application_menu:
+                children:
+                    acme_tab:
+                        children:
+                            acme_tab_link: ~
+
+    titles:
+        acme_link: My link page title

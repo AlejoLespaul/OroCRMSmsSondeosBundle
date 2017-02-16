@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <title>{% block title %} Tittle {% endblock %}</title>
+
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/bootstrap.min.css') }}"/>
+
+
+        <!-- libraries -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/libs/font-awesome.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/libs/nanoscroller.css') }}"/>
+
+        <!-- global styles -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/compiled/theme_styles.css') }}"/>
+
+
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/sys/alert.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/sys/myStyles.css') }}"/>        
+        <!-- Favicon -->
+        <link type="image/x-icon" href="favicon.png" rel="shortcut icon"/>
+
+        {% block stylesheets %}{% endblock %}
+
+    </head>
+    <body>
+
+        <div id="theme-wrapper">
+	
+			{% include("common/navbar.html.twig") %}
+	
+            <div id="page-wrapper" class="container">
+                <div class="row">
+
+                    {% include("common/sidebar.html.twig") %}
+
+                    <div id="content-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ol class="breadcrumb">
+                                            <li><a href="#">Home</a></li>
+                                            <li class="active"><span>Dashboard</span></li>
+                                        </ol>
+
+                                        <h1>Dashboard</h1>
+                                    </div>
+                                </div>
+
+                                {% block body %}{% endblock %}
+       
+
+                            </div>
+                        </div>
+
+                        <footer id="footer-bar" class="row">
+                            <p id="footer-copyright" class="col-xs-12">
+                                &copy; 2014 <a href="http://www.adbee.sk/" target="_blank">Adbee digital</a>. Powered by Centaurus Theme.
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include("common/config.html.twig") %}
+
+        <!-- global scripts -->
+        <script src="{{ asset('js/demo-skin-changer.js') }}"></script> 
+
+        <script src="{{ asset('js/jquery.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/jquery.nanoscroller.min.js') }}"></script>
+
+        <script src="{{ asset('js/demo.js') }}"></script>  
+
+
+        <!-- theme scripts -->
+        <script src="{{ asset('js/scripts.js') }}"></script>
+        <script src="{{ asset('js/pace.min.js') }}"></script>
+
+         {% block javascripts %}{% endblock %}
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+{
+    "name": "alejo-lespaul/oro-crm-sms-sondeos-bundle",
+    "description": "OroCRM SondeosSMS integration",
+    "homepage": "https://github.com/sy-metal/OroCRMSmsSondeosBundle.git",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "sondeos",
+        "sms"
+    ],
+    "homepage": "http://www.sondeos.com.ar/",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Cristian Incarnato",
+            "email": "cincarnato@gmail.com",
+            "homepage": "http://cincarnato.com.ar/",
+            "role": "Desarrollador"
+        },
+         {
+            "name": "Alejandro Furgeri",
+            "email": "alecitoman@gmail.com",
+            "homepage": "http://afurgeri.com.ar/",
+            "role": "Desarrollador"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"SyMetal\\Bundle\\SondeosBundle\\": ""},
+        "exclude-from-classmap": ["/Tests/"]
+    },
+    "require": {
+        "php": ">=5.6"
+    }
+}

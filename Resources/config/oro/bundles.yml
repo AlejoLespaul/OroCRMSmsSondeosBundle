@@ -1,0 +1,2 @@
+bundles:
+    - { name: SyMetal\Bundle\SondeosBundle\SyMetalSondeosBundle, priority: 102 }
