@@ -3,7 +3,7 @@
     "description": "OroCRM SondeosSMS integration",
     "homepage": "https://github.com/sy-metal/OroCRMSmsSondeosBundle.git",
     "license": "BSD-3-Clause",
-    "type":"project"
+    "type":"project",
     "keywords": [
         "sondeos",
         "sms"
