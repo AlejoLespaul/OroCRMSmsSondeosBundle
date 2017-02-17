@@ -1,7 +1,7 @@
 {
     "name": "alejo-lespaul/oro-crm-sms-sondeos-bundle",
     "description": "OroCRM SondeosSMS integration",
-    "type": "library",
+    "type": "project",
     "license": "BSD-3-Clause",
     "version": "0.0.1",
     "homepage": "https://github.com/AlejoLespaul/OroCRMSmsSondeosBundle",
