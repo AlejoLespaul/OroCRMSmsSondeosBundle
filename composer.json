@@ -28,7 +28,5 @@
     },
     "autoload": {
         "psr-4": {"SyMetal\\Bundle\\SondeosBundle\\": ""}
-        }
-
     }
 }
